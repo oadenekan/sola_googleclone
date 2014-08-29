@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*MAIN CSS*/
+/*CSS FOR NAVIGATION*/
+nav {
+	text-align: right;
+	padding: 10px 0;
+	margin: 10px 0;
+	position: relative;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	}
+
+nav li {
+	display: inline-block;
+	margin: 0px 4px;
+}
+
+
+nav a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.95em;
+	
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+#sign_in {
+	color: white;
+	background-color: #4285f4;
+	height: 30px;
+	width: 80px;
+	font-family: arial;
+	font-weight: bold;
+	border: none;
+	margin: 10px 15px;
+	box-shadow: 1px 1px 1px #888888;
+}
+
+#app {
+	margin-top: 10px;
+	margin-bottom: -8px;
+	opacity: .55;
+}
+#app:hover {
+	opacity: .99;
+
+}
+
+body {
+	overflow: hidden;
+}
+
+/*SEARCH INPUT CSS*/
+.search {
+	padding: 6px;
+	position: absolute;
+	top: 140px;
+	left: 300px;
+	list-style: none;
+}
+
+/*GOOGLE IMAGE CSS*/
+#google_logo {
+	margin-left: 180px;
+	
+}
+
+/*search box css*/
+#textarea {
+	width: 640px;
+	margin: 10px 0;
+	padding: 6px;
+	border: 1px solid #ccc;	
+	display: block;
+	background: url('../img/mic.png') no-repeat right;
+	opacity: .69;
+}
+
+/*img[src*="mic"] {*/
+#textarea:hover {
+	border-color: #bbb;
+	opacity: .99;
+}
+
+input[type="text"].enabled {
+	border: 1px solid blue;
+}
+
+/*search button css*/
+#button1 {
+	margin: 10px;
+	height: 35px;
+	width: 125px;
+	position: absolute;
+	left: 180px;
+	font-family: arial, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+	color:  #25383C;
+	background-color: rgba(238 238 238 2);
+	box-shadow: 1px 1px 1px #888888;
+}
+
+#button2 {
+	margin: 10px;
+	height: 35px;
+	width: 125px;
+	position: absolute;
+	left: 330px;
+	font-family: arial, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+	color:  #25383C;
+	background-color: rgba(238 238 238 2);
+	box-shadow: 1px 1px 1px #888888;
+}
+
+/*FOOTER CSS*/
+.footer {
+	background-color: #eeeeee;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+	
+.rightdiv {
+	margin: 10px 15px;
+	float: right;
+	display: inline;
+	font-family: arial, sans-serif;	
+	font-size: 13px;
+}
+
+.rightdiv a {
+	margin-right: 16px;
+}
+
+.leftdiv {
+	margin: 10px 10px;
+	display: inline-block;	
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+
+.leftdiv a {
+	margin-right: 16px;
+}
+
+div a {
+	text-decoration: none;
+	color: gray;
+	font-weight: thick;
+}
+
+div a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 660px) {
+	.rightdiv {
+		display: none;
+	}
+
+}
+
+#lang {
+	position: relative;
+	top: 80px;
+	text-align: center;
+
+}
+
+p a {
+	text-decoration: none;
+	color: blue;
+	margin: 2px;
+	font-size: .75em;
+	font-family: arial, sans-serif;
+}
+
+p a:hover {
+	text-decoration: underline;
+}
