@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* http://meyerweb.com/eric/tools/css/reset/ 
+=======
+ http://meyerweb.com/eric/tools/css/reset/ 
+>>>>>>> master
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -47,12 +51,14 @@ table {
 	border-spacing: 0;
 }
 
+
+
 /*MAIN CSS*/
 /*CSS FOR NAVIGATION*/
 nav {
 	text-align: right;
 	padding: 10px 0;
-	margin: 10px 0;
+	margin: 6px 0;
 	position: relative;
 }
 
@@ -60,6 +66,7 @@ nav ul {
 	list-style: none;
 	margin: 0 10px;
 	padding: 0;
+	font-family: sans-serif;
 	}
 
 nav li {
@@ -72,7 +79,8 @@ nav a {
 	text-decoration: none;
 	color: black;
 	font-size: 0.95em;
-	
+
+	font-size: 0.80em;
 }
 
 nav a:hover {
@@ -106,11 +114,13 @@ body {
 }
 
 /*SEARCH INPUT CSS*/
-.search {
-	padding: 6px;
+
+#search {
+	width:100%;
+	padding: 10px;
 	position: absolute;
-	top: 140px;
-	left: 300px;
+	top: 150px;
+	left: 320px;
 	list-style: none;
 }
 
@@ -122,7 +132,7 @@ body {
 
 /*search box css*/
 #textarea {
-	width: 640px;
+	width: 590px;
 	margin: 10px 0;
 	padding: 6px;
 	border: 1px solid #ccc;	
@@ -142,32 +152,44 @@ input[type="text"].enabled {
 }
 
 /*search button css*/
-#button1 {
-	margin: 10px;
-	height: 35px;
-	width: 125px;
+.button {
+	margin: 10px 8px;
+	height: 28px;
 	position: absolute;
 	left: 180px;
 	font-family: arial, sans-serif;
-	font-size: 0.75em;
+	font-size: 12px;
 	font-weight: bold;
-	color:  #25383C;
-	background-color: rgba(238 238 238 2);
+	border: 1px solid #dcdcdc;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	color:  #444 !important;
+	background-color: #f1f1f1;
+}
+
+.button:hover {
 	box-shadow: 1px 1px 1px #888888;
 }
 
 #button2 {
-	margin: 10px;
-	height: 35px;
-	width: 125px;
-	position: absolute;
 	left: 330px;
-	font-family: arial, sans-serif;
-	font-size: 0.75em;
-	font-weight: bold;
-	color:  #25383C;
-	background-color: rgba(238 238 238 2);
-	box-shadow: 1px 1px 1px #888888;
+}
+
+
+#lang {
+	margin-top: 78px;
+	margin-left: 115px;
+	font-size: 14px;
+	padding: 0 6px;
+}
+
+#lang a {
+	text-decoration: none;
+	color: #12c;
+}
+
+#lang a:hover {
+	text-decoration: underline;
 }
 
 /*FOOTER CSS*/
@@ -179,7 +201,7 @@ input[type="text"].enabled {
 }
 
 	
-.rightdiv {
+#rightdiv {
 	margin: 10px 15px;
 	float: right;
 	display: inline;
@@ -187,19 +209,20 @@ input[type="text"].enabled {
 	font-size: 13px;
 }
 
-.rightdiv a {
-	margin-right: 16px;
+
+.footer_left {
+	margin-right: 5px;
 }
 
-.leftdiv {
+.footer_right {
+	margin-right: 22px;
+}
+
+#leftdiv {
 	margin: 10px 10px;
 	display: inline-block;	
 	font-family: arial, sans-serif;
 	font-size: 13px;
-}
-
-.leftdiv a {
-	margin-right: 16px;
 }
 
 div a {
@@ -212,28 +235,203 @@ div a:hover {
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 660px) {
-	.rightdiv {
-		display: none;
-	}
 
+/*********************************
+ MEDIA QUERIES
+*********************************/
+@media screen and (max-width: 1024px) {
+	/*SEARCH INPUT CSS*/
+#search {
+	width:100%;
+	padding: 10px;
+	position: absolute;
+	top: 165px;
+	left: 195px;
+}
+
+/*search box css*/
+#textarea {
+	width: 520px;
+	margin-left: 50px;	
+}
+
+.button {
+	height: 30px;
+	font-size: 11px;
+	margin-left: 20px;
 }
 
 #lang {
-	position: relative;
-	top: 80px;
-	text-align: center;
-
+	margin-top: 78px;
+	margin-left: 115px;
+	font-size: 14px;
+	padding: 0 4px;
 }
 
-p a {
-	text-decoration: none;
+#lang a {
 	color: blue;
-	margin: 2px;
-	font-size: .75em;
-	font-family: arial, sans-serif;
+	text-decoration: none;
 }
 
-p a:hover {
+#lang a:visited {
+	color: #609;
+}
+
+#lang a:hover {
 	text-decoration: underline;
 }
+
+}
+
+/*********************************
+ MEDIA QUERIES
+*********************************/
+@media screen and (max-width: 768px) {
+	/*SEARCH INPUT CSS*/
+#search {
+	width:100%;
+	padding: 10px;
+	position: absolute;
+	top: 165px;
+	left: 55px;
+}
+
+#lang {
+	margin-top: 78px;
+	margin-left: 119px;
+	font-size: 14px;
+	padding: 0 4px;
+}
+
+/*********************************
+ MEDIA QUERIES
+*********************************/
+@media screen and (max-width: 480px) {
+
+/*NAV*/
+nav {
+	padding-top: 0;
+}
+
+#sign_in {
+	height: 25px;	
+}
+
+/*GOOGLE LOGO*/
+#google_logo {
+	width: 170px;
+	margin-left: 143px;
+}
+
+/*SEARCH INPUT CSS*/
+#search {
+	width:100%;
+	padding: 10px;
+	position: absolute;
+	top: 65px;
+	left: 0;
+}
+
+#textarea {
+	width: 380px;
+	margin-left: 32px;
+}
+
+.button {
+	width: 108px;
+	margin-left: -70px;
+	margin-top: 2px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#lang {
+	margin-top: 55px;
+	margin-left: 32px;
+	font-size: 14px;
+	padding: 0 2px;
+}
+
+/*FOOTER CSS*/
+
+#rightdiv {
+	margin: 10px 15px;
+	float: right;
+	display: inline;
+	font-family: arial, sans-serif;	
+	font-size: 13px;
+}
+
+.footer_right {
+	margin-right: 2px;
+}
+
+
+/*********************************
+ MEDIA QUERIES
+*********************************/
+@media screen and (max-width: 320px) {
+
+/*NAV*/
+nav ul {
+	padding-top: 0;
+	margin-left: 4px;
+	margin-right: 2px;
+}
+
+
+/*GOOGLE LOGO*/
+#google_logo {
+	width: 170px;
+	margin-left: 62px;
+}
+
+#textarea {
+	width: 250px;
+	margin-left: 18px;
+}
+
+.button {
+	width: 105px;
+	margin-left: -148px;
+	font-size: 11px;
+}
+
+#lang {
+	margin-top: 65px;
+	margin-left: 0;
+	margin-right: 20px;
+	text-align: center;
+	font-size: 13px;
+}
+
+/*FOOTER CSS*/
+
+footer {
+	margin-left: -8px;
+}
+
+.footer_left, .footer_right {
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+#leftdiv {
+	margin: 3px 24px;
+}
+
+#rightdiv {
+	margin-left: 10px 18px;
+	font-size: 13px;
+}
+
+.footer_right {
+	margin-right: 20px;
+	padding-left: 0;
+	padding-right: 8px;
+	/*word-spacing: 1;*/
+}
+
+}
+ 
+
